@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Punjab Natural - Online Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Punjab Natural</h1>
+    <p>Pure Homemade Products – Healthy & Organic</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#offers">Offers</a></li>
+      <li><a href="#cart">Cart</a></li>
+    </ul>
+  </nav>
+
+  <section id="products">
+    <h2>Our Chutneys</h2>
+    <img src="chutney-products.jpg" alt="Homemade Chutneys" class="banner" />
+    <div class="product-list">
+      <div class="product">
+        <h3>Plum Sauce</h3>
+        <p>Price: Rs. 1499 <span class="old-price">Rs. 2300</span></p>
+        <button onclick="addToCart('Plum Sauce', 1499)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Tamarind Sauce</h3>
+        <p>Price: Rs. 1100 <span class="old-price">Rs. 1700</span></p>
+        <button onclick="addToCart('Tamarind Sauce', 1100)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Apricot Sauce</h3>
+        <p>Price: Rs. 1299 <span class="old-price">Rs. 1830</span></p>
+        <button onclick="addToCart('Apricot Sauce', 1299)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="offers">
+    <h2>Special Offer</h2>
+    <img src="talbina-offer.jpg" alt="Talbina Offer" class="banner" />
+  </section>
+
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: Rs. <span id="total">0</span></p>
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Punjab Natural. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
